@@ -45,3 +45,26 @@ It is recommended to use a virtual environment to manage project dependencies.
 
    ```bash
    pip install pandas nltk matplotlib wordcloud streamlit scikit-learn numpy
+
+### Download the Required NLTK Datasets
+The application requires some NLTK datasets (VADER lexicon and stopwords). These are downloaded automatically when you run the application, but make sure you have an internet connection.
+
+To manually download the required datasets, run the following Python code:
+
+```python
+import nltk
+nltk.download('vader_lexicon')
+nltk.download('stopwords')
+```
+## Usage
+
+### Running the Dashboard
+To run the Streamlit dashboard, follow these steps:
+
+1. Save the script as `app.py`.
+2. Open a terminal and navigate to the directory where the script is saved.
+3. Run the following command:
+
+   ```bash
+   streamlit run app.py
+   ```
