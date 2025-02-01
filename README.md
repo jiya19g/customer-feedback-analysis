@@ -15,17 +15,33 @@ This is a Customer Feedback Analysis Dashboard built using Python, Streamlit, an
 
 ## Installation
 
-### Prerequisites
-You need to have the following Python packages installed:
-- `pandas`
-- `nltk`
-- `matplotlib`
-- `wordcloud`
-- `streamlit`
-- `sklearn`
-- `numpy`
+### Setting Up a Virtual Environment
 
-You can install these packages using pip:
+It is recommended to use a virtual environment to manage project dependencies.
 
-```bash
-pip install pandas nltk matplotlib wordcloud streamlit scikit-learn numpy
+1. **Create a Virtual Environment**:
+   - Navigate to your project folder in the terminal.
+   - Run the following command to create a virtual environment (replace `env` with your preferred name for the environment):
+
+     ```bash
+     python -m venv env
+     ```
+
+2. **Activate the Virtual Environment**:
+   - On **Windows**, run:
+
+     ```bash
+     .\env\Scripts\activate
+     ```
+
+   - On **macOS/Linux**, run:
+
+     ```bash
+     source env/bin/activate
+     ```
+
+3. **Install the Required Packages**:
+   Once the virtual environment is activated, you can install the necessary dependencies by running:
+
+   ```bash
+   pip install pandas nltk matplotlib wordcloud streamlit scikit-learn numpy
